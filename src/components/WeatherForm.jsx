@@ -11,9 +11,10 @@ class WeatherForm extends Component {
     e.preventDefault();
 
     if (this.location.current.value.length > 0) {
-     // var locVal =this.location;
-     // this.location = '';
-      this.props.onSearch(this.location);
+     var locVal =this.location;
+     this.location= React.createRef(" ");
+     console.log(this.location)
+      this.props.onSearch(locVal);
     }
     
   }
