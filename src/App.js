@@ -17,38 +17,20 @@ import About from './components/About';
 import Example from './components/Example';
 import Nav from './components/Nav';
 
-function App() {
+export default function App() {
   return (
     <Router>
-      <div>
-        {/* <Nav/> */}
-        {/* <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/example">example</Link>
-          </li>
-
-          <li>
-            <Link to="/weather">weather</Link>
-          </li>
-          <li>
-            <Link to="/about">about</Link>
-          </li>
-        </ul> */}
-
         <Routes>
-        <Route path="/" element={<Main />} /> 
-        <Route path="/example" element={<Example />} /> 
-        <Route path="/weather" element={<Weather />} /> 
-        <Route path="/about" element={<About />} /> 
-
-
+          <Route path="/" element={<Main />} > 
+          <Route index element={<Weather />} />
+            <Route path="example" element={<Example />} /> 
+            <Route path="weather" element={<Weather />} /> 
+            <Route path="about" element={<About />} /> 
+          </Route>
         </Routes>
-      </div>
     </Router>
   );
 }
 
-export default App;
+//export default App;
+ReactDOM.render(<App />, document.getElementById("root"));

@@ -19,6 +19,7 @@ class Weather extends Component {
   handleNewName = (location) => {
     var that = this;
     var locVal = location.current.value;
+
     this.setState({ isLoading: true });
     console.log(locVal);
     openWeatherMap.getTemp(locVal)
