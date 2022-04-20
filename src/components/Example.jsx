@@ -4,7 +4,7 @@ import Nav from './Nav';
 function Example (props) {
   return (
     <div>
-      <h3>Example components</h3>
+      <h3>Example</h3>
       <p>Welcome to example page!</p>
     </div>
    
