@@ -7,6 +7,6 @@ function About (props) {
       <p>Welcome to About page!!🥰🥰🥰</p>
     </div>
   )
-}
+ }
 
 export default About;
