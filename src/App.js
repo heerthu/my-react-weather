@@ -15,7 +15,8 @@ import Main from './components/Main';
 import Weather from './components/Weather';
 import About from './components/About';
 import Example from './components/Example';
-import Nav from './components/Nav';
+import { Grid, Cell,Menu,MenuItem } from 'react-foundation';
+
 
 export default function App() {
   return (
