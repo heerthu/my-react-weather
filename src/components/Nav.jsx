@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Link, NavLink,Outlet} from 'react-router-dom';
 
 class Nav extends Component {
-  onSearch(e) {
+    onSearch(e) {
     e.preventDefault();
     alert('Not yet wired up!');
   }
