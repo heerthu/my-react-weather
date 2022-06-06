@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { StrictMode } from "react";
 import 'foundation-sites/dist/css/foundation.min.css';
+import 'foundation-sites/dist/css/foundation-float.min.css';
 
 
 const rootElement = document.getElementById("root");
