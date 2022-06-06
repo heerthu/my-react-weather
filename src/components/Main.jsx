@@ -1,19 +1,24 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Nav from './Nav';
 import { App } from '../App';
+import { Grid, Cell, Menu, MenuItem } from 'react-foundation';
+import { Outlet } from 'react-router-dom';
 
-function Main (props) {
-  return (
-    <div>
-      <Nav/>
+
+class Main extends Component {
+  render() {
+    return (
+      <div>
+        <Nav />
         <div className='row'>
-          <div className='coloumns medium-6 large-4 small-centered'>
-           {props.children}
+          <div className='small-10  small-centered columns'>
+            <Outlet />
           </div>
         </div>
-    </div>
-  )
+      </div>
+    )
+  }
 }
 
 export default Main;

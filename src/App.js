@@ -3,7 +3,7 @@ import './App.css';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import {
-  BrowserRouter as Router, 
+  BrowserRouter as Router,
   Route,
   Link,
   useRouteMatch,
@@ -15,20 +15,21 @@ import Main from './components/Main';
 import Weather from './components/Weather';
 import About from './components/About';
 import Example from './components/Example';
-import { Grid, Cell,Menu,MenuItem } from 'react-foundation';
+import { Grid, Cell, Menu, MenuItem } from 'react-foundation';
+//require('style-loader!css-loader!foundation-sites/dist/css/foundation-float.min.css');
 
 
 export default function App() {
   return (
     <Router>
-        <Routes>
-          <Route path="/" element={<Main />} > 
+      <Routes>
+        <Route path="/" element={<Main />} >
           <Route index element={<Weather />} />
-            <Route path="example" element={<Example />} /> 
-            <Route path="weather" element={<Weather />} /> 
-            <Route path="about" element={<About />} /> 
-          </Route>
-        </Routes>
+          <Route path="example" element={<Example />} />
+          <Route path="weather" element={<Weather />} />
+          <Route path="about" element={<About />} />
+        </Route>
+      </Routes>
     </Router>
   );
 }
