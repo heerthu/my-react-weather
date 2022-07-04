@@ -24,7 +24,7 @@ class WeatherForm extends Component {
       <form onSubmit={this.onFormSubmit}>
         <h1>Get Weather</h1>
         <input type='text' ref={this.location} placeholder='Enter city Name' />
-        <button>Get Weather</button>
+        <button className='button'>Get Weather</button>
       </form>
     );
   }
